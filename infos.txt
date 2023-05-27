@@ -1,0 +1,11 @@
+Police Titre : Permanent Marker
+Police Texte : Roboto
+
+Couleur 1 : #ed1e79
+Couleur 2 : #6d0063
+
+Plugins :
+- https://atomiks.github.io/tippyjs/ => Pour le Tooltip sur les champs du formulaire
+- https://restcountries.com/ => API pour l'affichage des pays dans la liste déroulante
+- https://swiperjs.com/ => Pour faire le slider avec les 3 images
+- https://fancyapps.com/docs/ui/fancybox/ => Pour afficher les images du slider zoomées

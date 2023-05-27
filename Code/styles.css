@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body{
+    font-family: 'Permanent Marker', 'cursive' ;
+    background: linear-gradient(to right,#ed1e79, #6d0063);
+    background-attachment: fixed;
+}
+
+header{
+    display: flex;
+    background-image: url("../ELEMENTS/texture.png") ;
+    justify-content: space-around;
+    height: 300px;
+}
+
+img.logo{
+    display: flex;
+    height: 150px;
+    width: auto;
+    margin: auto;
+}
+
+nav{
+    display: flex;
+    /* background-color: green; */
+    justify-content: space-around;
+    width: 500px;
+    height: auto;
+    margin : auto;
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a.actif{
+    background: linear-gradient(to right,#ed1e79, #6d0063);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    width: 70px;
+    padding-left: 4px;
+}
+
+
+/* ------------------------------    BODY   ------------------------------*/
+
+
+section.body{
+    display: flex;
+    /* background-color: aqua; */
+    height: 800px;
+    margin-top: 15px;
+}
+
+.left{
+    background-color:white;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenu1{
+    width: 450px;
+    /* background-color: green; */
+    margin-top: 70px;
+    margin-left: 100px;
+}
+
+.text1 h1{
+    /* background-color: grey; */
+    height: 60px;
+}
+
+.text1 p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+    /* background-color: beige; */
+    height: 90px;
+}
+
+div.phone{
+    display: flex;
+    /* background-color: aqua; */
+}
+
+img.phone{
+    height: 35px;
+}
+
+div.phone a{
+    margin: auto 30px;
+    font-size: 1.3em;
+    background: linear-gradient(to right,#ed1e79, #6d0063);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+div.contenu2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../ELEMENTS/localisation.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 478px;
+    width: 716px;
+    margin-top: 70px;
+}
+
+div.text2{
+    color: white;
+    
+}
+
+div.text2 h1{
+    margin-top: 110px;
+    margin-left: 150px;
+    height: 60px;
+}
+
+div.text2 p{
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 150px;
+    font-size: 0.8em;
+    width: 350px;
+    height: 90px;
+}
+
+address{
+    width: 200px;
+    margin-left: 150px;
+}
