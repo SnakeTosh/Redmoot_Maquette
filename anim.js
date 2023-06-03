@@ -165,17 +165,17 @@ function initMap() {
 
 tippy('#idname', {
     content: "Fill with your name",
-    trigger: 'click'
+    trigger: 'focus'
   });
 
 tippy('#idmail', {
     content: "Fill with your Email",
-    trigger: 'click'
+    trigger: 'focus'
 });
 
 tippy('#zonetexte', {
     content: "Fill with your message",
-    trigger: 'click'
+    trigger: 'focus'
 });
 
 const menuHamburger = document.getElementById("menu")
