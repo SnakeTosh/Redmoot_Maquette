@@ -163,6 +163,20 @@ function initMap() {
 
 }
 
+tippy('#idname', {
+    content: "Fill with your name",
+    trigger: 'click'
+  });
+
+tippy('#idmail', {
+    content: "Fill with your Email",
+    trigger: 'click'
+});
+
+tippy('#zonetexte', {
+    content: "Fill with your message",
+    trigger: 'click'
+});
 
 const menuHamburger = document.getElementById("menu")
 const navLinks = document.querySelector(".nav-links")
