@@ -497,11 +497,19 @@ form button:hover{
 	.form p{
 		width: 90%;
 	}
-
 	form{
-		margin-left: -50px;
+		margin: auto;
 	}
 }
+
+@media screen and (max-width: 800px){
+.contenu{
+	width: 100%;
+}
+
+}
+
+
 
 @media screen and (max-width: 685px){
 
@@ -680,6 +688,10 @@ form button:hover{
 
 	.left{
 		width: 100%;
+	}
+
+	.contenu{
+		width: 400px;
 	}
 
 	.right{
