@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/af1edb4df6.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnnz8Rv31EIMg_wDTGv81yoUCkzBIeNt4&callback=initMap&v=weekly"
+      defer
+    ></script>
+    <title>Redmoot-Project</title>
+</head>
+<body>
+    <div class="contain">
+        <header>
+            <div class="nav-links">
+                <nav>
+                    <a href="">Agency</a>
+                    <a href="">Who are we ?</a>
+                    <a href="">Work</a>
+                </nav>
+                <img class="logo" src="ELEMENTS/logo.svg" alt="logo">  
+                <nav>
+                    <a  href="">Team</a>
+                    <a  href="">Localisation</a>
+                    <a class="actif" href="">Contact</a>
+                </nav>
+                <nav class="hidden">
+                    <a href="">Agency</a>
+                    <a href="">Who are we ?</a>
+                    <a href="">Work</a>
+                    <a  href="">Team</a>
+                    <a  href="">Localisation</a>
+                    <a class="actif" href="">Contact</a>
+                </nav>
+            </div>
+            <div class="menu">
+                <img class="img-menu" src="ELEMENTS/logo.svg" alt="logo">
+                <div class="pack-menu">
+                    <i class="fa-sharp fa-solid fa-bars" id="menu"></i>
+                    <h1>Menu</h1>     
+                </div>  
+            </div>  
+        </header>
+        <section class="body">
+            <div class="top">
+                <div class="contenu1">
+                    <div class="text1">
+                        <h1>HOW TO CONTACT US</h1>
+                        <p>rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius-
+                            mod tempor incidiaunt ut labore et dolore magna aliqua. Ut enim
+                            ad minim veniam, quis nostru
+                        </p>
+                        <div class="phone">
+                            <img class="phone" src="ELEMENTS/phone.svg" alt="icone téléphone"> 
+                            <a href="tel:0123456789">05 59 20 90 50</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+	
+                    <input type="radio" id="i1" name="images" checked />
+                    <input type="radio" id="i2" name="images" />
+                    <input type="radio" id="i3" name="images" />
+
+                    <div class="slide_img" id="one">			
+                            
+                            <img src="ELEMENTS/photo1.jpg" alt="office, computer">
+                            
+                                <label class="prev" for="i3"><i class="fa-solid fa-circle-chevron-left"></i></label>
+                                <label class="next" for="i2"><i class="fa-solid fa-circle-chevron-right"></i></label>	
+                        
+                    </div>
+                    
+                    <div class="slide_img" id="two">
+                        
+                            <img src="ELEMENTS/photo2.jpg" alt="work space">
+                            
+                                <label class="prev" for="i1"><i class="fa-solid fa-circle-chevron-left"></i></label>
+                                <label class="next" for="i3"><i class="fa-solid fa-circle-chevron-right"></i></label>
+                        
+                    </div>
+                            
+                    <div class="slide_img" id="three">
+                            <img src="ELEMENTS/photo3.jpg" alt="meeting room">	
+                            
+                                <label class="prev" for="i2"><i class="fa-solid fa-circle-chevron-left"></i></label>
+                                <label class="next" for="i1"><i class="fa-solid fa-circle-chevron-right"></i></label>
+                    </div>
+                
+                    <div id="nav_slide">
+                        <label for="i1" class="dots" id="dot1"></label>
+                        <label for="i2" class="dots" id="dot2"></label>
+                        <label for="i3" class="dots" id="dot3"></label>
+                    </div>
+                        
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="left">
+                    <div class="contenu2">
+                        <div class="text2">
+                            <h1>HOW TO FIND US</h1>
+                            <p>rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius-
+                                mod tempor incidiaunt ut labore et dolore magna aliqua. Ut enim
+                                ad minim veniam, quis nostru
+                            </p>
+                            <address>33 Avenue de l'aquitaine 64100 Bayonne</address>
+                        </div>
+                    </div>
+                    <div id="map"></div>
+                </div>
+                <div class="right">
+                    <div class="form">
+                        <h1>DROP US A LINE</h1>
+                        <p>Ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmoc
+                            tempor incididunt ut labore et dolore magna aliqua
+                        </p>
+                        <div class="contenu">
+                            <form action=""method="POST">
+                                <div class="content">
+                                    <div class="input-box">
+                                        <label for="name">Choose your country *</label>
+                                        <div class="select">
+                                            <select id="countries" name="countries"></select>
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </div>           
+                                    </div>                            
+                                    <div class="input-box">
+                                        <label  for="name">Name *</label>
+                                        <input id="idname" type="text" placeholder="John Doe" name="name" required/>    
+                                    </div>
+                                    <div class="input-box">
+                                        <label for="mail">Mail address *</label>
+                                        <input id="idmail"type="text" placeholder="johndoe@gmail.com" name="name" required/>    
+                                    </div>                         
+                                    <label for="message">Message *</label>
+                                    <textarea name="message" id="zonetexte" cols="30" rows="10" placeholder="Drop us a line" required></textarea>
+                                    <button type="submit"><span>SEND</span></button>
+                                    <div class="tip tip-red" data-tippy-theme="red" title="I'm a red tooltip!">
+                                       
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+                </div>
+    <script src="anim.js"></script>
+</body>
+</html>
