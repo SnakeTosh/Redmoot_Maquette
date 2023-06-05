@@ -33,10 +33,16 @@ function initMap() {
         
     });
 
+    const icone = {
+        url: "ELEMENTS/marker.svg", 
+        scaledSize: new google.maps.Size(40, 40),
+    };
+
     new google.maps.Marker({
         position: myLatLng,
         map,
         title: "Hello World!",
+        icon: icone 
     });
 
     var newStyle = [
